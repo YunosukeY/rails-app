@@ -1,41 +1,25 @@
-# Ruby on Rails チュートリアルのサンプルアプリケーション
+# サンプルアプリケーション
+このアプリはRailsチュートリアルに機能を追加したものです
 
-これは、次の教材で作られたサンプルアプリケーションです。  
-[*Ruby on Rails チュートリアル*](https://railstutorial.jp/)  
-[Michael Hartl](http://www.michaelhartl.com/) 著  
+# 使い方
 
-## ライセンス
-
-[Ruby on Rails チュートリアル](https://railstutorial.jp/)内にある  
-ソースコードはMITライセンスとBeerwareライセンスのもとで公開されています。  
-詳細は [LICENSE.md](LICENSE.md) をご覧ください。  
-
-## 使い方
-
-このアプリケーションを動かす場合は、まずはリポジトリを手元にクローンしてください。  
-その後、次のコマンドで必要になる RubyGems をインストールします。  
-
-```
-$ bundle install --without production
+### ビルド
+```Shell
+$ ./entrypoints.sh build
 ```
 
-その後、データベースへのマイグレーションを実行します。  
-
-```
-$ rails db:migrate
-```
-
-最後に、テストを実行してうまく動いているかどうか確認してください。  
-
-```
-$ rails test
+### テスト
+```Shell
+$ ./entrypoints.sh test
 ```
 
-テストが無事に通ったら、Railsサーバーを立ち上げる準備が整っているはずです。  
-
+### 実行
+次を実行してからlocalhost:3000にアクセス  
+```Shell
+$ ./entrypoints.sh up
 ```
-$ rails server
-```
 
-詳しくは、[*Ruby on Rails チュートリアル*](https://railstutorial.jp/)  
-を参考にしてください。  
+### 終了
+```Shell
+$ ./entrypoints.sh down
+```
