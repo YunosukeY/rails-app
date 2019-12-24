@@ -1,0 +1,13 @@
+version: 2
+jobs:
+  build:
+    machine:
+      image: circleci/classic:edge
+    steps:
+      - checkout
+      - run:
+          name: build
+          command: ./entrypoints.sh build
+      - run:
+          name: test
+          command: ./entrypoints.sh test
