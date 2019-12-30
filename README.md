@@ -2,7 +2,7 @@
 このアプリはRailsチュートリアルに機能を追加したものです。  
 現在のRailsチュートリアルとの差分は
 
-- [Terraformによるインフラのコード化](https://github.com/YunosukeY/terraform-rails-app)
+- [Terraformによるインフラのコード化](https://github.com/YunosukeY/infra-for-rails-app)
 - Dockerコンテナ化（RailsアプリとDBは別コンテナ）
 - CircleCIによるCI
 
@@ -38,7 +38,7 @@ $ ./entrypoints.sh down
 ```
 
 ## EC2上での運用
-1. [Terraformによるインフラのコード化](https://github.com/YunosukeY/terraform-rails-app)に沿ってインフラを構築し、EC2に接続します。
+1. [Terraformによるインフラのコード化](https://github.com/YunosukeY/infra-for-rails-app)に沿ってインフラを構築し、EC2に接続します。
 2. EC2にDocker及びDocker Composeをインストールする  
   参考：  
     - [Get Docker Engine - Community for Ubuntu](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
