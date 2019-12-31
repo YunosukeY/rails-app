@@ -16,7 +16,7 @@
 ## ローカルでの運用
 
 1. ビルド
-    ```Shell
+    ```
     $ ./entrypoints.sh build
     
     ...
@@ -25,7 +25,7 @@
     ```
 
 2. テスト
-    ```Shell
+    ```
     $ ./entrypoints.sh test
     
     ...
@@ -44,7 +44,7 @@
 
 3. 実行  
     次を実行してからlocalhost:3000にアクセス  
-    ```Shell
+    ```
     $ ./entrypoints.sh up
     Creating network "rails-app_default" with the default driver
     Creating rails-app_db_1 ... done
@@ -52,7 +52,7 @@
     ```
 
 4. 終了
-    ```Shell
+    ```
     $ ./entrypoints.sh down
     Stopping rails-app_web_1 ... done
     Stopping rails-app_db_1  ... done
@@ -62,11 +62,6 @@
     ```
 
 ## EC2上での運用
-1. [Terraformによるインフラのコード化](https://github.com/YunosukeY/infra-for-rails-app)に沿ってインフラを構築し、EC2に接続します。
-2. EC2にDocker及びDocker Composeをインストールする  
-  参考：  
-    - [Get Docker Engine - Community for Ubuntu](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
-    - [Post-installation steps for Linux](https://docs.docker.com/install/linux/linux-postinstall/)
-    - [Install Docker Compose](https://docs.docker.com/compose/install/)
-3. EC2にレポジトリをクローンし、[ローカルでの運用](#ローカルでの運用)の手順をEC2上で行う
-4. http://(EC2のIP):3000にアクセスし、確認
+1. [Terraform, Ansibleによるインフラのコード化](https://github.com/YunosukeY/infra-for-rails-app)に沿ってインフラを構築し、EC2に接続します。
+2. EC2にレポジトリをクローンし、[ローカルでの運用](#ローカルでの運用)の手順をEC2上で行う
+3. http://(EC2のIP):3000にアクセスし、確認
