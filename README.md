@@ -2,13 +2,12 @@
 このアプリはRailsチュートリアルに機能を追加したものです。  
 現在のRailsチュートリアルとの差分は
 
-- [Terraformによるインフラのコード化](https://github.com/YunosukeY/infra-for-rails-app)
+- [Terraform, Ansibleによるインフラのコード化](https://github.com/YunosukeY/infra-for-rails-app)
 - Dockerコンテナ化（RailsアプリとDBは別コンテナ）
 - CircleCIによるCI
 
 です。今後の追加機能としては
 
-- Ansibleによる構成管理
 - EKSでの運用
 - Railsアプリへの機能追加
 
@@ -17,25 +16,25 @@
 ## ローカルでの運用
 
 1. ビルド
-```Shell
-$ ./entrypoints.sh build
-```
+    ```Shell
+    $ ./entrypoints.sh build
+    ```
 
 2. テスト
-```Shell
-$ ./entrypoints.sh test
-```
+    ```Shell
+    $ ./entrypoints.sh test
+    ```
 
 3. 実行  
-  次を実行してからlocalhost:3000にアクセス  
-```Shell
-$ ./entrypoints.sh up
-```
+    次を実行してからlocalhost:3000にアクセス  
+    ```Shell
+    $ ./entrypoints.sh up
+    ```
 
 4. 終了
-```Shell
-$ ./entrypoints.sh down
-```
+    ```Shell
+    $ ./entrypoints.sh down
+    ```
 
 ## EC2上での運用
 1. [Terraformによるインフラのコード化](https://github.com/YunosukeY/infra-for-rails-app)に沿ってインフラを構築し、EC2に接続します。
