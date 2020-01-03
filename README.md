@@ -5,10 +5,10 @@
 - [Terraform, Ansibleによるインフラのコード化](https://github.com/YunosukeY/infra-for-rails-app)
 - Dockerコンテナ化（RailsアプリとDBは別コンテナ）
 - CircleCIによるCI
+- [AWS EKSでの運用(TerraformによるIaC)](https://github.com/YunosukeY/eks-for-rails-app)
 
 です。今後の追加機能としては
 
-- EKSでの運用
 - Railsアプリへの機能追加
 
 を考えています
@@ -61,7 +61,10 @@
     Removing network rails-app_default
     ```
 
-## EC2上での運用
+## AWS EC2上での運用
 1. [Terraform, Ansibleによるインフラのコード化](https://github.com/YunosukeY/infra-for-rails-app)に沿ってインフラを構築し、EC2に接続します。
-2. EC2にレポジトリをクローンし、[ローカルでの運用](#ローカルでの運用)の手順をEC2上で行う
-3. http://(EC2のIP):3000にアクセスし、確認
+2. EC2にレポジトリをクローンし、[ローカルでの運用](#ローカルでの運用)の手順をEC2上で行います
+3. http://(EC2のIP):3000にアクセスし、確認します
+
+## AWS EKS上での運用
+[EKSでの運用](https://github.com/YunosukeY/eks-for-rails-app)をご覧ください
