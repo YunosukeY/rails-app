@@ -1,17 +1,14 @@
 # サンプルアプリケーション
-このアプリはRailsチュートリアルに機能を追加したものです。  
-現在のRailsチュートリアルとの差分は
+このアプリはRailsチュートリアルに機能を追加したものです  
+Railsチュートリアルとの差分は以下のとおりです
 
 - [Terraform, Ansibleによるインフラのコード化](https://github.com/YunosukeY/infra-for-rails-app)
 - Dockerコンテナ化（RailsアプリとDBは別コンテナ）
-- CircleCIによるCI
+- CircleCIによるCI/CDパイプライン
 - [AWS EKSでの運用(TerraformによるIaC)](https://github.com/YunosukeY/eks-for-rails-app)
 
-です。今後の追加機能としては
-
-- Railsアプリへの機能追加
-
-を考えています
+## 利用方法
+現在http://18.177.98.239:3000でサービスを公開しています  
 
 ## ローカルでの運用
 
